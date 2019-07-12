@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>Mand Mobile</title><script>(function(window, document) {
+        function resize() {
+          var ww = window.innerWidth
+          if (ww > window.screen.width) {
+            window.requestAnimationFrame(resize)
+          } else {
+            if (ww > 750) {
+              ww = 750
+            }
+            document.documentElement.style.fontSize = ww * 100 / 750 + 'px'
+          }
+        }
+
+        resize();
+
+        window.addEventListener('resize', resize);
+        window.addEventListener('pageshow', function (e) {
+          if (e.presisted) {
+            resize();
+          }
+        });
+      })(window, document);</script><link href=/js/about.6435d4f4.js rel=prefetch><link href=/css/app.4bf99de9.css rel=preload as=style><link href=/css/chunk-vendors.a0ba3d1a.css rel=preload as=style><link href=/js/app.c4c307f6.js rel=preload as=script><link href=/js/chunk-vendors.9c263a63.js rel=preload as=script><link href=/css/chunk-vendors.a0ba3d1a.css rel=stylesheet><link href=/css/app.4bf99de9.css rel=stylesheet></head><body><div id=app></div><script src=/js/chunk-vendors.9c263a63.js></script><script src=/js/app.c4c307f6.js></script></body></html>
